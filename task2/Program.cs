@@ -40,7 +40,7 @@ void FindNumber(double[,] array, double number)
     }
     if (count == 0)
     {
-        Console.WriteLine($"The array has no contain number {number}");
+        Console.WriteLine($"The array does not contain number {number}");
     }
 }
 

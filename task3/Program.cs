@@ -6,7 +6,7 @@ void FillAray(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i,j] = new Random().Next(-5,6);
+            array[i,j] = new Random().Next();
         }
     }
 }
@@ -23,7 +23,7 @@ void PrintArray(int[,] array)
     }  
 }
 
-void SumByColumns(int[,] array, int m)
+void ArithMean(int[,] array, int m)
 {
     int count = -1;
     for (int j = 0; j < array.GetLength(1); j++)
@@ -48,4 +48,4 @@ int[,] array = new int[m, n];
 
 FillAray(array);
 PrintArray(array);
-SumByColumns(array, m);
+ArithMean(array, m);
